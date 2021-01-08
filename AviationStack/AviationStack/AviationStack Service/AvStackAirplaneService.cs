@@ -14,9 +14,16 @@ namespace AviationStack
 
         public JObject Json_Airplanes { get; set; }
 
-        public AvStackAirplaneManager AvStackAirplaneManager { get; set; }
+        public AvStackAirplaneManager AvStackAirplaneManager { get; set; } = new AvStackAirplaneManager();
 
-        public AvStackAirplaneDTO AvStackAirplaneDTO { get; set; }
+        public AvStackAirplaneDTO AvStackAirplaneDTO { get; set; } = new AvStackAirplaneDTO();
+
+        public int AirplaneCount()
+        {
+            var count = Json_Airplanes["pagination"]["count"].ToString();
+            var intCount = Int32.Parse(count);
+            return intCount;
+        }
 
         public AvStackAirplaneService()
         {
@@ -24,7 +31,7 @@ namespace AviationStack
 
             Json_Airplanes = JsonConvert.DeserializeObject<JObject>(Airplanes);
 
-
+            AvStackAirplaneDTO.DeserializeAirplanes(Airplanes);
         }
     }
 }

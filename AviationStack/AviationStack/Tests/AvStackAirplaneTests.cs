@@ -15,7 +15,7 @@ namespace AviationStack
         [Test]
         public void ApiCallReturnsExpectedNumberOfResults()
         {
-            
+            Assert.That((_avStackAirplaneService.AirplaneCount()), Is.EqualTo(100));
         }
     }
 }

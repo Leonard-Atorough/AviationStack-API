@@ -19,8 +19,8 @@ namespace AviationStack
 
         public string GetAirplanes()
         {
-            var request = new RestRequest("/airplanes" + AvStackConfigReader.ApiUrlMod + AvStackConfigReader.ApiKey, Method.GET);
-            var response = _client.Execute(request);
+            var request = new RestRequest("airplanes" + AvStackConfigReader.ApiUrlMod + AvStackConfigReader.ApiKey);
+            var response = _client.Execute(request, Method.GET);
 
             return response.Content;
         }
