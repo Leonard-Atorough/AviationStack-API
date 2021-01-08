@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 
-namespace AviationStack
+namespace AviationStack.AvStackAirplane
 {
     class AvStackAirplaneDTO
     {
