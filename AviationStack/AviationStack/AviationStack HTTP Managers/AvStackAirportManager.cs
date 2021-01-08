@@ -1,12 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RestSharp;
 
 namespace AviationStack
 {
-    class AvStackAirportManager
+    public class AvStackAirportManager
     {
+        private readonly IRestClient _client;
+
+        public AvStackAirportManager()
+        {
+            _client = new RestClient(AvStackConfigReader.BaseUrl);
+        }
+
+        public string GetAirportData()
+        {
+            var request = new RestRequest("airports" + AvStackConfigReader.ApiUrlMod + AvStackConfigReader.ApiKey);
+            var response = _client.Execute(request, Method.GET);
+            return response.Content;
+        }
     }
 }

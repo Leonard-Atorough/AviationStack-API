@@ -86,7 +86,7 @@
     <Compile Include="AviationStack DTOs\AvStackAirplaneDTO.cs" />
     <Compile Include="AviationStack DTOs\AvStackAirplaneModel.cs" />
     <Compile Include="AviationStack DTOs\AvStackAirportModel.cs" />
-    <Compile Include="AviationStack DTOs\AvStaclAirportDTO.cs" />
+    <Compile Include="AviationStack DTOs\AvStackAirportDTO.cs" />
     <Compile Include="AviationStack HTTP Managers\AvStackAirplaneManager.cs" />
     <Compile Include="AviationStack HTTP Managers\AvStackAirportManager.cs" />
     <Compile Include="AviationStack Service\AvStackAirplaneService.cs" />
