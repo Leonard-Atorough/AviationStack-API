@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AviationStack.AviationStack_DTOs
+namespace AviationStack
 {
     class AvStackAirplaneModel
     {
