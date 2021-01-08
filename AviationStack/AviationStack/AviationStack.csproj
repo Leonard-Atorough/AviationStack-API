@@ -73,10 +73,15 @@
   <ItemGroup>
     <Compile Include="AviationStack DTOs\AvStackAirplaneDTO.cs" />
     <Compile Include="AviationStack DTOs\AvStackAirplaneModel.cs" />
+    <Compile Include="AviationStack DTOs\AvStackAirportModel.cs" />
+    <Compile Include="AviationStack DTOs\AvStaclAirportDTO.cs" />
     <Compile Include="AviationStack HTTP Managers\AvStackAirplaneManager.cs" />
+    <Compile Include="AviationStack HTTP Managers\AvStackAirportManager.cs" />
     <Compile Include="AviationStack Service\AvStackAirplaneService.cs" />
+    <Compile Include="AviationStack Service\AvStackAirportService.cs" />
     <Compile Include="AvStackConfigReader.cs" />
     <Compile Include="Tests\AvStackAirplaneTests.cs" />
+    <Compile Include="Tests\AvStackAirportTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
