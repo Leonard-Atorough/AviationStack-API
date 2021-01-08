@@ -1,12 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace AviationStack
 {
-    class AvStackAirportTests
+    public class AvStackAirportTests
     {
+        private AvStackAirportService _avStackAirport = new AvStackAirportService();
+
+        [Test]
+        public void CheckCountIs100()
+        {
+            Assert.That(_avStackAirport.AvStackAirportDTO.Airports.pagination.count, Is.EqualTo(100));
+        }
     }
 }
