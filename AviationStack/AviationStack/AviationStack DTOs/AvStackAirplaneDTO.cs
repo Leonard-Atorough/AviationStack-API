@@ -8,5 +8,6 @@ namespace AviationStack
 {
     class AvStackAirplaneDTO
     {
+        public AvStackAirplaneRoot MyProperty { get; set; }
     }
 }

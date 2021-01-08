@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AviationStack
 {
-    class AvStackAirplaneModel
+    class AvStackAirplaneRoot
     {
     }
 }
