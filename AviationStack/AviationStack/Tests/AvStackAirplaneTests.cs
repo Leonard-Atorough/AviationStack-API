@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AviationStack.Tests
+namespace AviationStack
 {
     class AvStackAirplaneTests
     {
+        [Test]
     }
 }
