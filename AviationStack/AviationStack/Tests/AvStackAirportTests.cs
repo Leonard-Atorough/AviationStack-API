@@ -11,7 +11,15 @@ namespace AviationStack
         [Test]
         public void CheckCountIs100()
         {
-            Assert.That(_avStackAirport.AvStackAirportDTO.Airports.pagination.count, Is.EqualTo(100));
+            Assert.That(_avStackAirport.AirportCount, Is.EqualTo("100"));
         }
+
+        [Test]
+        public void CheckTotalIs6471()
+        {
+            Assert.That(_avStackAirport.AirportTotal, Is.EqualTo("6471"));
+        }
+
+
     }
 }

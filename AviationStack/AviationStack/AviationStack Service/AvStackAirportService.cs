@@ -24,5 +24,15 @@ namespace AviationStack
 
             AvStackAirportDTO.DeserialiseAirports(Airports);
         }
+
+        public string AirportCount()
+        {
+            return Json_airports["pagination"]["count"].ToString();
+        }
+
+        public string AirportTotal()
+        {
+            return Json_airports["pagination"]["total"].ToString();
+        }
     }
 }
