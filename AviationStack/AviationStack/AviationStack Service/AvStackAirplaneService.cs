@@ -22,8 +22,20 @@ namespace AviationStack
         public int AirplaneCount()
         {
             var count = Json_Airplanes["pagination"]["count"].ToString();
-            var intCount = Int32.Parse(count);
-            return intCount;
+            return Int32.Parse(count);
+            
+        }
+
+        public int AirplaneTotal()
+        {
+            var total = Json_Airplanes["pagination"]["total"].ToString();
+            return Int32.Parse(total);
+
+        }
+
+        public bool FindProductionLine(string productionLine)
+        {
+            return Json_Airplanes["data"][0]["production_line"].ToString() == productionLine;
         }
 
         public AvStackAirplaneService()
