@@ -34,5 +34,20 @@ namespace AviationStack
         {
             return Json_airports["pagination"]["total"].ToString();
         }
+
+        public string AirportICAO()
+        {
+            return Json_airports["data"][0]["icao_code"].ToString();
+        }
+
+        public string AirportIATA()
+        {
+            return Json_airports["data"][0]["iata_code"].ToString();
+        }
+
+        public string AirportGeoNameID()
+        {
+            return Json_airports["data"][0]["geoname_id"].ToString();
+        }
     }
 }
