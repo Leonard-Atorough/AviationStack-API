@@ -20,6 +20,22 @@ namespace AviationStack
             Assert.That(_avStackAirport.AirportTotal, Is.EqualTo("6471"));
         }
 
+        [Test]
+        public void CheckCorrectICAOCodeReturned()
+        {
+            Assert.That(_avStackAirport.AirportICAO, Does.Contain("NTGA"));
+        }
 
+        [Test]
+        public void CheckCorrectIATACodeReturned()
+        {
+            Assert.That(_avStackAirport.AirportIATA, Does.Contain("AAA"));
+        }
+
+        [Test]
+        public void CheckCorrectGeoNameIDReturned()
+        {
+            Assert.That(_avStackAirport.AirportGeoNameID, Does.Contain("6947726"));
+        }
     }
 }
